@@ -1,0 +1,182 @@
+html {
+    height: auto;
+    width: auto;
+}
+/*css for the header*/
+#header {
+    display: grid;
+    grid-template-columns: [first] auto [col2-start] 50px 50px 50px 70px;
+    grid-template-rows: auto;
+    grid-template-areas:
+    ". img Gmail G Sign-in";
+}
+
+a {
+    text-decoration: none;
+    color: #5F6368;
+    font-size: 13px;
+    font-family: arial,sans-serif;
+}
+
+a.lang {
+    text-decoration: none;
+    color: #0770f1;
+    font-size: 13px;
+    font-family: arial,sans-serif;
+}
+
+
+#Gmail {
+    grid-area: Gmail;
+    justify-self: center;
+    align-self: center;    
+}
+
+#img {
+    grid-area: img;
+    justify-self: center;
+    align-self: center;
+}
+#G {
+    grid-area: G;
+    justify-self: center;
+    align-self: center;
+}
+
+#Sign-in {
+    grid-area: Sign-in;
+    justify-self: center;
+    align-self: center;
+    background-color: #4683ea;
+    height: 30px;
+    width: 65px;
+    line-height: 30px;
+    text-align: centeR;
+    color: white;
+    font-weight: bold;
+    border: 1px solid #4285f4;
+}
+
+/* css for center */
+#center {
+    min-height: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 250px 70px 70px 250px;
+    grid-template-areas: 
+    ". logo ."
+    ". search-bar ."
+    ". submit_button ."
+    ". NigLang .";
+}
+
+#logo {
+    grid-area: logo;
+    justify-self: center;
+    align-self: end;
+}
+#search-bar {
+    grid-area: search-bar;
+    height: 30px;
+    width: 80%;
+    align-self: center;
+    justify-self: center;
+    border: 1px solid rgba(0, 0, 0, 0.151);
+    border-radius: 30px;
+}
+
+
+#submit_button {
+    display: submit_button;
+    grid-area: submit_button;
+    justify-self: center;
+    align-self: center;
+}
+#search-button {
+    border: none;
+    font-size: 15px;
+    color: #5F6368;
+    margin-right: 25px;
+    padding: 7px 15px 7px 15px;
+    border-radius: 3px;
+}
+#lucky-button {
+    border: none;
+    font-size: 15px;
+    color: #5F6368;
+    padding: 7px 15px 7px 15px;
+    border-radius: 3px;
+}
+#search-button:hover {
+    border: 1px solid rgba(0, 0, 0, 0.226);
+}
+#lucky-button:hover {
+    border: 1px solid rgba(0, 0, 0, 0.226);
+}
+
+#NigLang {
+    grid-area: NigLang;
+    justify-self: center;
+}
+
+/*footer*/
+#footer{
+    display: grid;
+    position: absolute;
+    bottom: 0;     
+    grid-template-columns: 70px 70px 50px 150px auto 50px 50px 50px; ;
+    grid-template-rows: 70px;
+    grid-template-areas:
+    "AD Bus Abt searchTut . Privacy Terms Settings";
+}
+
+
+#AD {
+    grid-area: AD;
+    justify-self: center;
+    align-self: center;    
+}
+
+#Bus {
+    grid-area: Bus;
+    justify-self: center;
+    align-self: center;
+}
+#Abt {
+    grid-area: Abt;
+    justify-self: center;
+    align-self: center;
+}
+
+#searchTut {
+    grid-area: searchTut;
+    justify-self: center;
+    align-self: center;
+}
+
+#Privacy {
+    grid-area: Privacy;
+    justify-self: center;
+    align-self: center;
+}
+
+#Terms {
+    grid-area: Terms;
+    justify-self: center;
+    align-self: center;
+}
+
+#Settings {
+    grid-area: Settings;
+    justify-self: center;
+    align-self: center;
+}
+
+.Nig {
+    margin-left: 30px;
+    grid-area: Nig;
+    justify-self: center;
+    align-self: center;
+    color: rgba(0, 0, 0, .54);
+    padding-left: 27px
+}
